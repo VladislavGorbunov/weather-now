@@ -1,0 +1,80 @@
+@import './base.css';
+
+body {
+  background: url("https://cdn.culture.ru/images/5e93b202-465f-5235-a419-18f26c2b8477") center !important;
+  background-size: cover;
+}
+
+hr {
+  opacity: 0.1;
+  color: rgb(7, 85, 241);
+}
+
+h2, h3, h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+#app {
+  margin: 0 auto;
+  font-weight: normal;
+  height: 100vh;
+}
+
+.bg-layer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(18, 18, 26, 0.95);
+  backdrop-filter: blur(0px);
+}
+
+.bg-container {
+  overflow: hidden;
+  position: relative;
+  background: #f3f7ff;
+  color: #111111 !important;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.blur-round {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 350px;
+  height: 160px;
+  border-radius: 0%;
+  background: rgb(7, 85, 241);
+  z-index: -1;
+  filter:blur(80px);
+  opacity: 0.5;
+}
+
+
+.bg-container h1 {
+  color: #111 !important;
+}
+
+.dark {
+  background: rgba(24, 22, 31, 0.5);
+  color: #e5f5ff !important;
+  transition: 1s;
+}
+
+.dark h1 {
+  color: #fff !important;
+}
+
+.cityInput {
+  padding: 15px;
+}
+
+.btn-select-theme {
+  padding: 12px 40px;
+  border-radius: 35px 15px;
+  background: #3713eb;
+  border: none;
+  width: 220px;
+}
